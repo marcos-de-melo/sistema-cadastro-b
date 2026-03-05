@@ -1,3 +1,6 @@
+<?php
+include "./db/conexao.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -15,13 +18,14 @@
             <ul>
                 <li><a href="index.php?menu=home">Home</a></li>
                 <li><a href="index.php?menu=cadastro">Cadastro</a></li>
-                <li><a href="index.php?menu=lista">Lista de Cadastros</a></li>
+                <li><a href="index.php?menu=lista-cadastro">Lista de Cadastros</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <?php
-        
+        $menu = $_GET['menu'] ?? 'home';
+        include $menu . ".php";
         ?>
     </main>
 </body>
