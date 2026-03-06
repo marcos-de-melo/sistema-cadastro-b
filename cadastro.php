@@ -10,11 +10,19 @@
         <input type="email" name="email" id="email" required>
     </div>
     <div>
-        <label for="dataNasc">Data de Nascimento:</label>
-        <input type="date" name="dataNasc" id="dataNasc" required>
+        <label for="dataNascUsuario">Data de Nascimento:</label>
+        <input type="date" name="dataNascUsuario" id="dataNascUsuario" required>
+    </div>
+    <div>
+        <label for="senhaUsuario">Senha:</label>
+        <input type="password" name="senhaUsuario" id="senhaUsuario" required>
+    </div>
+    <div>
+        <label for="obsUsuario">Observação:</label>
+        <textarea name="obsUsuario" id="obsUsuario"></textarea>
     </div>
 
     <div>
-        <input type="submit" value="Cadastrar">
+        <input type="submit" value="Cadastrar">       
     </div>
 </form>
